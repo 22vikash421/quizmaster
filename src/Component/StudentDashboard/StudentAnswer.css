@@ -1,0 +1,72 @@
+.StudentAnswer {
+    position: absolute;
+    left: 5rem;
+    top: 4rem;
+    padding: 20px;
+    width: calc(100% - 5rem);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #f9f9f9; /* Light background color */
+  }
+  
+  .StudentAnswer-c1 {
+    width: 100%;
+    border-radius: 5px;
+    padding: 1.5rem;
+    background-color: #fff; /* White background */
+    border: 1px solid #ddd; /* Light border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .StudentAnswer h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #8884d8; /* Match pie chart color */
+    padding-bottom: 0.5rem;
+  }
+  
+  .StudentAnswer h3 {
+    font-size: 1.5rem;
+    color: #555;
+    margin: 1rem 0 0.5rem 0;
+  }
+  
+  .StudentAnswer ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .StudentAnswer li {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f7f7f7; /* Light background for list items */
+  }
+  
+  .StudentAnswer li strong {
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .StudentAnswer li br {
+    margin-bottom: 0.5rem;
+  }
+  
+  .PieChart {
+    margin: 2rem auto; /* Center the chart */
+  }
+  
+  .PieChart .recharts-tooltip-label {
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .PieChart .recharts-legend-item {
+    color: #333;
+  }
+  

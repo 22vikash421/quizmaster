@@ -1,0 +1,200 @@
+.AdminPage {
+  position: absolute;
+  left: 5rem;
+  top: 4rem;
+  padding: 20px;
+  width: calc(100% - 5rem);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.Admin-c1 {
+  width: 100%;
+  border-radius: 5px;
+  padding: 1rem;
+  background: var(--main-color);
+  border: 1px solid var(--border-color);
+}
+.Admin-dash-nav {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem 1.5rem;
+  background-color: #f8f9fa; /* Soft background for clarity */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.Admin-dash-nav ol {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  padding-left: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.Admin-dash-nav ol li {
+  position: relative;
+}
+
+.Admin-dash-nav ol li::after {
+  content: "/";
+  margin-left: 10px;
+  color: #6c757d; /* Divider color */
+}
+
+.Admin-dash-nav ol li:last-child::after {
+  content: ""; /* Remove slash from last item */
+}
+
+.Admin-dash-nav ol li a {
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.Admin-dash-nav ol li a:hover {
+  color: #0056b3; 
+}
+.Admin-cardContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.Admin-card {
+  background-color: #008cba;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: calc(23% - 15px); 
+  height: 6rem;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.Admin-card:hover {
+  transform: translateY(-5px);
+}
+.Admin-SContainer{
+  display: flex;
+  justify-content: space-around;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.Admin-calendar {
+  margin-top: 30px;
+  background-color: #fff;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  max-width: 800px;
+}
+
+.Admin-calendar h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.react-calendar {
+  width: 100%;
+  border: none;
+  font-family: "Arial", sans-serif;
+  color: black;
+}
+.react-calendar__navigation {
+  display: flex;
+  height: 50px;
+  margin-bottom: 1em;
+}
+.react-calendar__navigation button{
+  color: #000;
+  font-size: large;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  padding: 0.5em;
+  height: 2rem;
+  font-size: 1rem;
+  text-decoration: none;
+
+}
+
+.react-calendar__tile {
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+
+.react-calendar__tile--active {
+  background-color: #007bff;
+  color: black;
+  border-radius: 10px;
+}
+
+.react-calendar__tile--now {
+  background-color: #28a745;
+  color: black;
+}
+
+.react-calendar__tile:hover {
+  background-color: #0056b3;
+  color: white;
+}
+.react-calendar button {
+  margin: 0;
+  border: 0;
+  outline: none;
+  height: 4rem;
+}
+
+
+.Admin-pieChart {
+  margin-top: 30px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  height: 57vh;
+}
+
+.Admin-pieChart h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+
+
+@media (max-width: 992px) {
+  .Admin-card {
+    width: calc(33.33% - 15px); 
+  }
+}
+
+@media (max-width: 768px) {
+  .Admin-card {
+    width: calc(50% - 10px); 
+  }
+}
+
+@media (max-width: 576px) {
+  .Admin-card {
+    width: 100%;
+  }
+}

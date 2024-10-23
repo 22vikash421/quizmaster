@@ -1,0 +1,219 @@
+.TeacherPage {
+  position: absolute;
+  left: 5rem;
+  top: 4rem;
+  padding: 20px;
+  width: calc(100% - 5rem);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.Teacher-c1 {
+  width: 100%;
+  border-radius: 5px;
+  padding: 1rem;
+  background: var(--main-color);
+  border: 1px solid var(--border-color);
+}
+.Teacher-dash-nav {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem 1.5rem;
+  background-color: #f8f9fa; /* Soft background for clarity */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.Teacher-dash-nav ol {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  padding-left: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.Teacher-dash-nav ol li {
+  position: relative;
+}
+
+.Teacher-dash-nav ol li::after {
+  content: "/";
+  margin-left: 10px;
+  color: #6c757d; /* Divider color */
+}
+
+.Teacher-dash-nav ol li:last-child::after {
+  content: ""; /* Remove slash from last item */
+}
+
+.Teacher-dash-nav ol li a {
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.Teacher-dash-nav ol li a:hover {
+  color: #0056b3; 
+}
+.CardContainer-ProfileBar{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 5px;
+  padding: 1rem;
+  background: var(--main-color);
+  border: 1px solid var(--border-color);
+}
+.Teacher-CardContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--secondary-color);
+  padding: 10px;
+  height: 8rem;
+  width: 500px;
+  border-radius: 5px;
+}
+.CardContainer-Profilebox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 25%;
+  background-color: var(--main-color);
+  border-radius: 5px;
+}
+.FaUser-Profilebox {
+  font-size: 5rem;
+}
+.CardContainer-ProfileName {
+  padding: 10px;
+  color: var(--main-color);
+  width: 54%;
+}
+.ProfileName-TeacherId {
+  background-color: var(--main-color);
+  width: fit-content;
+  padding: 3px 6px;
+  border-radius: 2px;
+  color: black;
+  margin-bottom: 10px;
+}
+.CardContainer-ProfileEdit a {
+  padding: 10px 20px;
+  color: var(--secondary-color);
+  background-color: var(--main-color);
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.CardContainer-Shortcut-Container{
+  display: flex;
+  align-items: center;
+  width: 15%;
+  height: 8rem;
+}
+.CardShort-Addbtn{
+  height: 3rem;
+}
+
+.Teacher-calendar {
+  margin-top: 30px;
+  background-color: #fff;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  max-width: 800px;
+}
+
+.Teacher-calendar h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+.Teacher-calendar .exam-tile {
+  color: #be4545;
+  padding: 2px;
+  border-radius: 3px;
+  font-size: 12px;
+  margin-top: 2px;
+  border: 1px solid;
+}
+
+.react-calendar {
+  width: 100%;
+  border: none;
+  font-family: "Arial", sans-serif;
+  color: black;
+}
+.react-calendar__navigation {
+  display: flex;
+  height: 50px;
+  margin-bottom: 1em;
+}
+.react-calendar__navigation button{
+  color: #000;
+  font-size: large;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  padding: 0.5em;
+  height: 2rem;
+  font-size: 1rem;
+  text-decoration: none;
+
+}
+
+.react-calendar__tile {
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+
+.react-calendar__tile--active {
+  background-color: #007bff;
+  color: black;
+  border-radius: 10px;
+}
+
+.react-calendar__tile--now {
+  background-color: #28a745;
+  color: black;
+}
+
+.react-calendar__tile:hover {
+  background-color: #0056b3;
+  color: rgb(139, 65, 65);
+}
+.react-calendar button {
+  margin: 0;
+  border: 0;
+  outline: none;
+  height: 4rem;
+}
+
+.pie-chart {
+  margin-top: 28px;
+  padding: 20px;
+  background: #fff; /* White background */
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  text-align: center; /* Center align the text */
+  width: 500px;
+}
+
+.pie-chart h4 {
+  margin-bottom: 20px; /* Space between the title and chart */
+}
+
+.Teacher-calendra-pie-box{
+  width: 100%;
+  display: flex;
+  gap: 5rem;
+}

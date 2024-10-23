@@ -1,0 +1,138 @@
+.StudentPage {
+  position: absolute;
+  left: 5rem;
+  top: 4rem;
+  padding: 20px;
+  width: calc(100% - 5rem);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.Student-c1 {
+  width: 100%;
+  border-radius: 5px;
+  padding: 1rem;
+  background: var(--main-color);
+  border: 1px solid var(--border-color);
+}
+.Student-dash-nav {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem 1.5rem;
+  background-color: #f8f9fa; /* Soft background for clarity */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.Student-dash-nav ol {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  padding-left: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.Student-dash-nav ol li {
+  position: relative;
+}
+
+.Student-dash-nav ol li::after {
+  content: "/";
+  margin-left: 10px;
+  color: #6c757d; /* Divider color */
+}
+
+.Student-dash-nav ol li:last-child::after {
+  content: ""; /* Remove slash from last item */
+}
+
+.Student-dash-nav ol li a {
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.Student-dash-nav ol li a:hover {
+  color: #0056b3;
+}
+.Student-CardContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--secondary-color);
+  padding: 10px;
+  height: 8rem;
+  width: 500px;
+  border-radius: 5px;
+}
+.CardContainer-Profilebox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 25%;
+  background-color: var(--main-color);
+  border-radius: 5px;
+}
+.FaUser-Profilebox {
+  font-size: 5rem;
+}
+.CardContainer-ProfileName {
+  padding: 10px;
+  color: var(--main-color);
+  width: 54%;
+}
+.ProfileName-StudentId {
+  background-color: var(--main-color);
+  width: fit-content;
+  padding: 3px 6px;
+  border-radius: 2px;
+  color: black;
+  margin-bottom: 10px;
+}
+.CardContainer-ProfileEdit a {
+  padding: 10px 20px;
+  color: var(--secondary-color);
+  background-color: var(--main-color);
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.Student-ExamSection {
+  width: 50%;
+  border: 1px solid var(--border-color);
+  margin: 1rem 0;
+  padding: 1rem;
+}
+.ExamList {
+  border: 1px solid var(--border-color);
+  padding: 10px;
+}
+.ExamList h4{
+  font-size: larger;
+}
+.ExamList ul{
+  list-style: none;
+  margin-left: 1rem;
+}
+.ExamCalendra-box{
+  width: 100%;
+  border: 1px solid var(--border-color);
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  gap: 10px;
+}
+.CalendraChart{
+  border: 1px solid var(--border-color);
+  padding: 10px;
+  width: 48%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 15px;
+}
