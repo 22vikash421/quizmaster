@@ -32,7 +32,7 @@ function StudentDashboard() {
           const loggedInUser = snapshot.val();
 
           setLoginUserName(loggedInUser.name || "");
-          setLoginUserRole(loggedInUser.role === "Student");
+          setLoginUserRole(loggedInUser.role || "");
           setLoginUserSemester(loggedInUser.semester || "");
           setLoginUserId(loggedInUser.id || "");
         } else {
